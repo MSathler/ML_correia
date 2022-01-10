@@ -11,10 +11,10 @@ import pickle
 
 # load data from excel
 
-dataset_file = pd.read_csv("alinhado_separados_superior_mean_std.csv")
-dataset_file1 = pd.read_csv("desalinhado1_separados_superior_mean_std.csv")
-dataset_file2 = pd.read_csv("desalinhado2_separados_superior_mean_std.csv")
-dataset_file3 = pd.read_csv("transitorio_separados_superior_mean_std.csv")
+dataset_file = pd.read_csv("alinhado_separados_superior_tratado_SUP25.csv")
+dataset_file1 = pd.read_csv("desalinhado1_separados_superior_tratado_SUP25.csv")
+dataset_file2 = pd.read_csv("desalinhado2_separados_superior_tratado_SUP25.csv")
+dataset_file3 = pd.read_csv("transitorio_separados_superior_tratado_SUP25.csv")
 
 X_1 = np.array(dataset_file.iloc[:,0:6].values).reshape(-1,6)#int(len(dataset_file.iloc[:,0].values)/25),-1)
 X_2 = np.array(dataset_file1.iloc[0:25*4,0:6].values).reshape(-1,6)#int(len(dataset_file1.iloc[:,0].values)/25),-1)

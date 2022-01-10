@@ -9,5 +9,7 @@ ex_new_data = np.array([1,1,2,1,2,3]).reshape(1,-1)
 
 loaded_model = pickle.load(open("RF_trained_model.sav", 'rb'))
 result = loaded_model.predict(ex_new_data)
-
-print(f"O resultado da precição é {result} - sendo 0 desalinhado e 1 alinhado")
+if result[0] == 0:
+    print(f"O resultado da precição é {result[0]} ---> Desalinhado <---")
+else:
+    print(f"O resultado da precição é {result[1]} ---> Alinhado <---")

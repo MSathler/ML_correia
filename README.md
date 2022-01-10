@@ -12,6 +12,10 @@ Arquivos necessários para o tratamento e treinamento dos dados de acelerometro 
 Primeiramente é necessário separar os dados e seus respectivos rotulos, o codigo abaixo pode auxiliar na separação:
 
     python3 separacao_rotulos.py desalinhamento_xy_sem_filtro.csv save
+    python3 separacao_superior.py desalinhado1_separados.csv 25 save
+    python3 separacao_superior.py desalinhado2_separados.csv 25 save
+    python3 separacao_superior.py transitorio_separados.csv 10 save
+
 
 Os dados de entrada devem estar no formato da imagem abaixo:
 
@@ -52,5 +56,5 @@ Este codigo retorna arquivos com modelos treinados, nomeados de:
 ### Utilizando o modelo treinado
 Que podem ser carregados conforme o exemplo:
 
-    load_model.py
+    python3 load_model.py
 
