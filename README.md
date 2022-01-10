@@ -31,16 +31,15 @@ Depois disso, para metodos de classificação baseados em Random Forest e Gradie
 
     python3 separacao_superior.py alinhado_separados.csv 10 save
 
-O primeiro arquivo deve ser o com os dados de um rotulo com colunas x,y,z (Conforme ![image2])
+O primeiro arquivo deve ser o com os dados de um rotulo com colunas x,y,z (Conforme a segunda imagem)
 
 
-### Analise dos Labels
+### Tratamento dos dados e Análise dos Labels
 Após a separação da parte superior, vamos tirar a media e o desvio padrao de cada dado de aceleração, 
 
     python3 analise_labels.py alinhado_separados_superior.csv desalinhado1_separados_superior.csv desalinhado2_separados_superior.csv transitorio_separados_superior.csv
     
 Esse codigo plotara os labels:
-![image](https://user-images.githubusercontent.com/51409770/148814282-f70b5b46-989d-482e-b244-f36c3c97c05c.png)
 
     
 ### Treinamento
