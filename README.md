@@ -41,11 +41,13 @@ O primeiro arquivo deve ser o com os dados de um rotulo com colunas x,y,z (Confo
 
 
 ### Tratamento dos dados e Análise dos Labels
-Após a separação da parte superior, vamos tirar a media e o desvio padrao de cada dado de aceleração, 
+Após a separação da parte superior, vamos tirar a media e o desvio padrao de cada dado de aceleração.
 
     python3 analise_labels.py alinhado_separados_superior.csv desalinhado1_separados_superior.csv desalinhado2_separados_superior.csv transitorio_separados_superior.csv
     
-Esse codigo plotara os labels:
+Esse codigo vai gerar as entradas do modelo no formato mostrado abaixo:
+
+![image](https://user-images.githubusercontent.com/51409770/148822101-94a6d029-8c54-4513-a345-5ab586f42131.png)
 
     
 ### Treinamento
