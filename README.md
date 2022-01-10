@@ -1,4 +1,10 @@
 # ML_correia
+## Autores
+- Maurício Souza Sathler
+- Matheus Neves Marques
+- Andre Maciel Cid
+- Gustavo Pessin
+
 Este pacote foi desenvolvido em python3.6 com as seguintes bibliotecas:
 - Numpy
 - Matplotlib
