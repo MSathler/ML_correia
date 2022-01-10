@@ -2,12 +2,10 @@
 Este pacote foi desenvolvido em python3.6 com as seguintes bibliotecas:
 - Numpy
 - Matplotlib
-- sklearn
-- pickle
+- Sklearn
+- Pickle
 
 Arquivos necessários para o tratamento e treinamento dos dados de acelerometro para modelos de Machine Learning
-
-
 
 
 ### Separação dos Rotulos
@@ -44,7 +42,7 @@ Esse codigo plotara os labels:
 ### Treinamento
 Depois disso temos o arquivo de treinamento, nele é utilizados dois modelos o Random Forest e o Gradient Boosting
 
-    python3 classificacao_teste.py 
+    python3 classificacao.py 
     
 Este codigo retorna arquivos com modelos treinados, nomeados de:
   
