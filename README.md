@@ -65,3 +65,4 @@ Que podem ser carregados conforme o exemplo:
 
     python3 load_model.py
 
+![image](https://user-images.githubusercontent.com/51409770/148964535-2043095e-618b-4806-8f41-e458d3cd5567.png)
