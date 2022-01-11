@@ -18,9 +18,6 @@ Arquivos necessários para o tratamento e treinamento dos dados de acelerometro 
 Primeiramente é necessário separar os dados e seus respectivos rotulos, o codigo abaixo pode auxiliar na separação:
 
     python3 separacao_rotulos.py desalinhamento_xy_sem_filtro.csv save
-    python3 separacao_superior.py desalinhado1_separados.csv 25 save
-    python3 separacao_superior.py desalinhado2_separados.csv 25 save
-    python3 separacao_superior.py transitorio_separados.csv 10 save
 
 
 Os dados de entrada devem estar no formato da imagem abaixo:
@@ -36,6 +33,9 @@ O código gera diferentes arquivos para os labels, tendo o formado de saída:
 Depois disso, para metodos de classificação baseados em Random Forest e Gradient Boosting é muito importante o tratamento da entrada, assim, para melhorar o resultado da classificação deve-se descartar os dados coletados da parte inferior da correia.
 
     python3 separacao_superior.py alinhado_separados.csv 10 save
+    python3 separacao_superior.py desalinhado1_separados.csv 25 save
+    python3 separacao_superior.py desalinhado2_separados.csv 25 save
+    python3 separacao_superior.py transitorio_separados.csv 10 save
 
 O primeiro arquivo deve ser o com os dados de um rotulo com colunas x,y,z (Conforme a segunda imagem)
 
